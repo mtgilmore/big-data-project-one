@@ -4,8 +4,10 @@ install.packages("sna")
 library(igraph)
 library(sna)
 
+# Import data
 g <- read.graph("C:/Users/Eric/Desktop/Spring_2020/BigData/project1/email-EU.edges", format="ncol", directed=F)
 
+# Function exploration for question 4
 #g.adj <- rgraph("graph", FALSE)
 g.adj
 
@@ -53,3 +55,7 @@ knn(g, vids = V(g), weights = NULL)
 as_edgelist(g, names = TRUE)
 
 plot(g)
+
+largest_cliques(data)
+
+# Answers for question 5
