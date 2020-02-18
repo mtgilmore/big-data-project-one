@@ -9,7 +9,6 @@ g <- read.graph("C:/Users/Eric/Desktop/Spring_2020/BigData/project1/email-EU.edg
 
 # Function exploration for question 4
 #g.adj <- rgraph("graph", FALSE)
-g.adj
 
 delete_edges(g, g)
 
@@ -59,3 +58,10 @@ plot(g)
 largest_cliques(data)
 
 # Answers for question 5
+
+
+
+# number 3 stuff
+gcb <- igraph::centr_betw(data)
+gcb
+
