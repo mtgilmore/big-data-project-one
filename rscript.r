@@ -55,13 +55,17 @@ as_edgelist(g, names = TRUE)
 
 plot(g)
 
-largest_cliques(data)
-
-# Answers for question 5
-
+igraph::largest_cliques(data)
 
 
 # number 3 stuff
 gcb <- igraph::centr_betw(data)
 gcb
+
+ged <- igraph::edge_density(data)
+ged
+
+gsp <- igraph::shortest_paths(data)
+
+hist(igraph::degree(data))
 
