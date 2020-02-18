@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 install.packages("igraph")
 install.packages("sna")
 
@@ -69,3 +70,5 @@ gsp <- igraph::shortest_paths(data)
 
 hist(igraph::degree(data))
 
+eigen <- igraph:: eigen_centrality(data)
+eigen
