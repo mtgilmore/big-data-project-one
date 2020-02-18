@@ -55,7 +55,7 @@ as_edgelist(g, names = TRUE)
 
 plot(g)
 
-largest_cliques(data)
+largest_cliques(g)
 
 # Answers for question 5
 
